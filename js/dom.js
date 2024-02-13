@@ -77,3 +77,16 @@ document.getElementById('pentagon_btn').addEventListener('click', function () {
         setResult('pentagon_area_result', equation);;
     }
 })
+
+// ellipse
+document.getElementById('ellipse_btn').addEventListener('click', function () {
+    const firstInput = getValue('ellipse_fisrt_input');
+    const secondtInput = getValue('ellipse_secont_input');
+    const equation = Math.PI * firstInput * secondtInput;
+    if (isNaN(equation)) {
+        setResult('ellipse_area_result', '(Invalid)');;
+    }
+    else {
+        setResult('ellipse_area_result', equation);;
+    }
+})
